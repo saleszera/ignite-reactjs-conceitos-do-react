@@ -1,6 +1,6 @@
 section.task-list {
   background: var(--shapes);
-  border-radius: 1rem;
+  border-radius: 1rem;  
   
   margin-top: -10rem;
   padding: 70px 60px;
@@ -19,12 +19,12 @@ section.task-list {
     }
 
     .input-group {
-      display: flex;
-      gap: 0.25rem;
+      display: flex;      
       align-items: center;
 
       background: #fff;
       font-size: 16px;
+      box-shadow: 3px 2px 2px black;
       
       input {
         flex: 1;
@@ -32,8 +32,10 @@ section.task-list {
         border: 0;
         color: var(--text);
         padding: 12px 24px;
+
+        height: 2.75rem;
         
-        border-radius: 8px;
+        border-radius: 8px 0 0 8px;
         border: 0;
         
         &::placeholder {
@@ -41,17 +43,17 @@ section.task-list {
         }
       }
 
-      button {
-        font-weight: 600;
-        border-radius: 8px;
+      button {        
         border: 0;
         background: var(--green);
         color: #fff;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
 
-        padding: 14px;
+        height: 2.75rem;
+        width: 3rem;
         transition: filter 0.2s;
 
         &:hover {
